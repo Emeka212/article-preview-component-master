@@ -1,0 +1,225 @@
+/*Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+	padding: 0px;
+	margin: 0px;
+	background: hsl(210, 46%, 95%);
+	font-family: arial;
+	font-family: [Manrope](https://fonts.google.com/specimen/Manrope);
+    font-weight: 500px;
+}
+.article_card{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 760px;
+	box-shadow: 0px 5px 10px 1px hsl(212, 23%, 69%);
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.article_card .article_img{
+	width: 300px;
+    margin-right: 40px;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+}
+.article_card .article_img img{
+	position: relative;
+	left: 0px;
+	width: 120%;
+	height: 100%;
+}
+.article_card .all_txt{
+	width: 400px;
+}
+.article_card .all_txt .title_txt{
+	font-size: 10px;
+	width: 350px;
+	color: hsl(217, 19%, 35%);
+	line-height: 25px;
+	margin-top: 40px;
+}
+.article_card .all_txt .article_txt{
+	width: 400px;
+	font-size: 15px;
+	color: hsl(214, 17%, 51%);
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.article_card .article_footer{
+	width: 100%;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.article_card .article_footer .avatar_img img{
+	width: 50px;
+	margin-right: 20px;
+	border-radius: 100%;
+}
+.article_card .article_footer .abt_avatar{
+	font-size: 14px;
+	line-height: 25px;
+}
+.article_card .article_footer .abt_avatar .avatar_name{
+	color: hsl(217, 19%, 35%);
+	font-weight: bold;
+}
+.article_card .article_footer .abt_avatar .date_posted{
+	color: hsl(212, 23%, 69%);
+}
+.article_card .article_footer .share_btn button{
+	position: absolute;
+	right: 30px;
+	margin-top: 10px;
+    background: hsl(210, 46%, 95%);
+    border-radius: 100%;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    padding: 10px 25px 25px 10px;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+}
+.article_card .article_footer .share_btn button:focus{
+	background: hsl(217, 19%, 35%);
+}
+.all_social_btn{
+	display: none;
+	margin-top: -70px;
+	width: 180px;
+	margin-left: 44px;
+	position: absolute;
+	background: hsl(217, 19%, 35%);
+	font-size: 13px;
+	padding: 20px 40px 15px 40px;
+	border-radius: 5px;
+	z-index: 1;
+	box-shadow: 0px 5px 10px 1px hsl(210, 46%, 95%);
+}
+.all_social_btn::after{
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 98%;
+	left: 50%;
+	border-top: 10px solid hsl(217, 19%, 35%);
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.all_social_btn span{
+	color: hsl(212, 23%, 69%);
+	position: relative;
+	top: -5px;
+	letter-spacing: 5px;
+}
+.all_social_btn img{
+	margin-left: 10px;
+	cursor: pointer;
+}
+@media screen and (max-width: 805px){
+	.article_card{
+		width: 650px;
+		padding-bottom: 1px;
+	}
+	.article_card .article_img{
+		width: 250px;
+	}
+	.article_card .all_txt{
+		width: 250px;
+	}
+	.article_card .all_txt .title_txt{
+		font-size: 10px;
+		width: 320px;
+	}
+	.article_card .all_txt .article_txt{
+		width: 320px;
+		font-size: 15px;
+	}
+	.all_social_btn{
+		margin-left: -15px;
+	}
+
+}
+@media screen and (max-width: 680px){
+	.article_card{
+		width: 550px;
+	}
+	.article_card .article_img{
+		width: 200px;
+		margin-right: 20px;
+	}
+	.article_card .all_txt .title_txt{
+		font-size: 9px;
+		width: 300px;
+	}
+	.article_card .all_txt .article_txt{
+		width: 300px;
+		font-size: 14px;
+	}
+	.all_social_btn{
+		margin-left: -45px;
+	}
+}
+@media screen and (max-width: 580px){
+	.attribution { font-size: 11px;margin-bottom: 10px;margin-top: -200px; text-align: center;}
+	.article_card{
+		width: 90%;
+	    display: block;
+	    position: relative;
+	    margin-top: 100%;
+	}
+	.article_card .article_img{
+		width: 100%;
+	    margin-right: 0px;
+	    border-radius: 10px 10px 0px 0px;
+	}
+	.article_card .article_img img{
+		width: 105%;
+		height: auto;
+	}
+	.article_card .all_txt{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.article_card .all_txt .title_txt{
+		font-size: 10px;
+		width: 100%;
+	}
+	.article_card .all_txt .article_txt{
+		width: 100%;
+	}
+	.article_card .article_footer .share_btn button{
+		right: 8%;
+		margin-top: 13px;
+	    z-index: 1;
+	}
+	.all_social_btn{
+		margin-top: -9px;
+		width: 100%;
+		left: 0%;
+		margin-left: 0px;
+		padding: 30px 0px 30px 0px;
+		border-radius: 0px 0px 10px 10px;
+		box-shadow: none;
+	}
+	.all_social_btn::after{
+		display: none;
+	}
+	.all_social_btn span{
+		margin-left: 5%;
+	}
+
+}
+@media screen and (max-width: 320px){
+	.article_card{
+	    margin-top: 120%;
+	}
+}
